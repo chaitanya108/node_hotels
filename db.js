@@ -1,6 +1,6 @@
 //import mongoose
 const mongoose = require('mongoose');
-
+require('dotenv').config()
 //defining mongodb connection url
 //const mongoURL = process.env.MONGODB_URL_LOCA;
 const mongoURL = process.env.MONGODB_URL;
@@ -27,4 +27,3 @@ db.on('disconnected', () => {
 
 //exporting the database connection
 module.exports = db;
-
